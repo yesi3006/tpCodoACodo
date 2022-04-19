@@ -1,0 +1,121 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: larger;
+}
+/*CSS del body*/
+body{
+    position: relative;
+    padding-bottom: 60px;
+    min-height: 100vh;;
+}
+/*CSS del header*/
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    left: 0;
+    padding: 0px;
+    position: relative;
+    height: auto;
+}
+.nav{
+    background-color: gray;
+    color: white;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 3px;
+    text-decoration: none;
+    font-size: x-small;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+/* CSS de pie de pagina*/
+footer{
+    background-color: black;
+    color: white;
+    width: 100%;
+    left: 0;
+    padding: 0px;
+    text-align: center;
+    font-size: x-small;
+    clear: both;
+    bottom: 0%;
+    position:absolute;
+    height: auto;
+}
+#social{
+    width: 15px; 
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+/*CSS del formulario de registro */
+fieldset{
+    padding: 5px;
+    border-style:dotted;
+}
+/*CSS de las sucursales*/
+iframe{
+ width: 300px;
+ height: 200px;
+ border: 0px;  
+ padding: 10px; 
+}
+/*puntos de control*/
+.example{
+    padding: 20px;
+    color:white;
+}
+.responsivo{
+    font-size: 3vw;
+}
+@media only screen and (max-width: 600px){
+    .example{
+        background: green;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .responsivo{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .example{
+        background: red;
+    }
+    h1{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .example{
+        background: blue;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .example{
+        background: orange;
+    }
+    h1{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .example{
+        background: pink;
+    }
+    h1{
+        font-size: 36px;
+    }
+}

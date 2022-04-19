@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS externo-->
+    <link rel="stylesheet" href="css\proyecto.css">
+    <script src="https://kit.fontawesome.com/b0562aedb1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+    <title>about Cocina de Juan</title> <!--Título de la pestaña del navegador-->
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="nav" href="proyecto.html">Home</a>
+            <a class="nav" href="about.html">Acerca de</a>
+            <a class="nav" href="contact.html">Contacto</a>
+            <a class="nav" href="form.html">Registrese</a>
+            <a class="nav" href="location.html">sucursales</a>
+        </nav>
+        <h1>La cocina de Juan</h1> <!--Se usa una sola vez porque indica el título principal-->
+    </header>
+    <main>
+        <h3>Formulario de Registro</h3>
+        <form action="show_data.html" target="_blank" method="post">
+            <fieldset><legend>Datos personales</legend>
+                <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..." required="validar">
+                <label for="lastname">Apellido: </label><input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui..." required="validar">
+            </fieldset><br>
+            <fieldset> 
+                <legend>Dirección</legend>
+                <label for="street">Calle: </label><input size="30" type="text" name="street" placeholder="Ingrese la calle aqui...">
+                <label for="numero">numero: </label><input size="30" type="text" name="num" placeholder="Ingrese el numero...">
+                <label for="city">ciudad: </label><input size="30" type="text" name="city" placeholder="C.A.B.A">
+                <label for="postalCode">Código postal: </label><input size="30" type="text" name="postalCode" placeholder="Ingrese codigo postal..."><br><br>
+                <label for="telephone">Teléfono: </label><input size="30" type="text" name="telephone" placeholder="Ingrese su numero de teléfono...">
+                <label for="birthDate">Fecha nac: </label><input size="30" type="date" name="birthDate" placeholder="">
+                <label for="mail">Mail: </label><input type="email" name="mail" required="validar">
+                <label for="clave">Clave: </label><input type="password" name="clave">
+            </fieldset><br>
+            <fieldset><legend>Género</legend>
+                    <input type="radio" name="gender" value="hombre" checked>Hombre
+                    <input type="radio" name="gender" value="Mujer">Mujer
+                    <input type="radio" name="gender" value="Otro"> Otro
+            </fieldset><br>
+            <fieldset><legend>Conocimientos previos</legend>
+                <input type="checkbox" name="conocimientos" value="HTML"> HTML
+                <input type="checkbox" name="conocimientos" value="CSS"> CSS
+                <input type="checkbox" name="conocimientos" value="BOOTSTRAP"> Bootstrap
+                <input type="checkbox" name="conocimientos" value="Javascript"> Javascript
+                <input type="checkbox" name="conocimientos" value="Typescript"> Typescript
+                <input type="checkbox" name="conocimientos" value="Angular"> Angular
+                <input type="checkbox" name="conocimientos" value="BaseDeDatos"> Base de Datos
+                <input type="checkbox" name="conocimientos" value="Python"> Python
+                <input type="checkbox" name="conocimientos" value="Django"> Django    
+            </fieldset><br>
+            <fieldset><legend>Estudios</legend>
+                <select id="estudios" name="estudios">
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="terciario">Terciario</option>
+                    <option value="universitario">Universitario</option>
+                </select><br><br>
+            </fieldset>
+            <fieldset><legend>Comentarios:</legend>
+                <label for="comentarios"></label> <textarea name="comentarios" rows="10" cols="30"></textarea>
+            </fieldset>
+            <br><br>
+            <div>
+                <input type="submit" value="Enviar">
+                <button type="reset">Reset</button>  
+            </div>      
+        </form>    
+    </main>
+    <footer>
+        <i class="fa-brands fa-facebook" id="social"></i>
+        <i class="fa-brands fa-youtube" id="social"></i>
+        <i class="fa-brands fa-linkedin-in" id="social"></i>
+        <i class="fa-brands fa-instagram" id="social"></i>
+        <p>Derechos reservados @2020</p>
+    </footer>
+</body>
+</html>

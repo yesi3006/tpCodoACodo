@@ -1,0 +1,51 @@
+/* Hoja de estilos */
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: Arial;
+    border: 1px solid cornflowerblue;
+}
+header{
+    text-align: left;
+    font: 85%  Arial;
+    color: balck;
+    padding: 10px 0px;
+    background-color: blue;
+}
+section {
+    width: 79%;
+    background: #ccc;
+    float: left;
+    overflow: auto;
+    padding-bottom: 60px;
+    padding-top:30px;
+}
+
+div{
+    background-color: orange; /*color de fondo*/
+    border: 1px solid orange /*borde: ancho, tipo y color*/
+    height:100px; /*alto*/
+    width: 90%; /*ancho*/
+    display: inline-block; /*forma de visualizar un elemento. Podemos darle comportamiento como un div colocando el atributo en block*/
+}
+aside {
+    float: right;
+    border: 1px solid red;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    top: 50px;
+    /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+    /*visibility: hidden;*/
+}
+footer {
+    position: relative;
+    margin-top: -50px;
+    height: 40px; 
+    padding:5px 0px;
+    clear: both;
+    background: #286af0;
+    text-align: center;
+    color: #fff;
+}

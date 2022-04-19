@@ -1,0 +1,52 @@
+/* Hoja de estilos */
+*{
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    font-family: Arial;
+}
+body{
+    text-align: center;
+    font: 85%  Arial;
+    line-height: 1.4em;
+    color:black;
+    background: white;
+}
+
+h1{
+    padding: 0%;
+    color: green;
+    background-color: red;
+}
+.subtitulos{
+    margin-left: 50px;
+    color: yellowgreen;
+    background-color: olivedrab;
+}
+#myDiv{
+    color: blueviolet;
+    background-color: aqua;
+    text-align: center;
+    margin-left: 100px; 
+    width: 100%;
+    border: 20px solid black;
+}
+div{
+    background-color: blue;
+    border: 2px solid black;
+    height: 100px;
+    width: 50%; /*ancho*/
+    display: block; /*Valor por defecto*/
+}
+span{
+    background-color: red; /*color de fondo*/
+    border: 1px solid black; /*borde: ancho, tipo y color*/
+    height: 100px; /*alto*/
+    width: 100px; /*ancho*/
+    display: inline-block; /*forma de visualizar un elemento. Podemos darle comportamiento como un div colocando el atributo en block*/
+}
+p{
+    color: black;
+    font-style: italic;
+    font-size: larger;
+}
