@@ -1,17 +1,17 @@
 *{
     font-family: 'Quicksand', sans-serif;
 }
-h1{
+h2{
     text-align: center;
     font-size: larger;
 }
-/*CSS del body*/
+/***************CSS del body*******************/
 body{
     position: relative;
     padding-bottom: 60px;
     min-height: 100vh;;
 }
-/*CSS del header*/
+/****************CSS del header****************/
 header{
     background-color: black;
     color: white;
@@ -29,9 +29,38 @@ header{
     padding: 3px;
     text-decoration: none;
     font-size: x-small;
+    left: 0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-/* CSS de pie de pagina*/
+/*****************CSS de imagnenes *****************/
+.imgAbout{
+    width: 40%;
+    border-radius: 10px;
+    transition: 3s;
+}
+.imgClient{
+    width: 500px; 
+    height: 300px;
+    margin: 10px;
+    padding: 0px;
+}
+.imgSopaCalabaza{
+    width: 30%;
+    border-radius: 10px;
+    transition: 3s;
+}
+/*Transformacion de imagenes*/
+.imgSopaCalabaza:hover{ 
+    -webkit-transform: rotate(180deg);transform: rotate(180deg);
+}
+.contenedor1:hover .imgAbout {
+    -webkit-transform:scale(0.5);transform:scale(0.5);
+}
+.contenedor1 {
+    overflow:hidden;
+} 
+
+/************ CSS de pie de pagina******************/
 footer{
     background-color: black;
     color: white;
@@ -50,21 +79,77 @@ footer{
     height: 0px;
     margin: 0px;
     padding: 0px;
-    
+    color: white;
+    text-decoration: none;
 }
-/*CSS del formulario de registro */
+/* Pseudo clase para cambiar el color sobre los objetos*/ 
+#social:hover {
+    color: gainsboro;
+}
+.nav:hover{
+    color: gainsboro;
+}
+/********************CSS del formulario de registro ********************/
 fieldset{
     padding: 5px;
     border-style:dotted;
 }
-/*CSS de las sucursales*/
+label, input{
+    font-size: 1.0vw;
+}
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=date],
+input[type=tel],
+input[type=number],
+input[type=url],
+input[type=textArea],
+input[type=radio],
+input[type=checkbox],
+.estudios{
+    width: 80%;
+    padding: 1vw;
+    margin: 1vw;
+    display: inline-block;
+    border: 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit],
+button[type=reset]{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover, 
+button[type=reset]:hover{
+    background-color: blue;
+}
+form{
+
+    border-radius: 5px;
+    background-color: ghostwhite;
+    padding: 2%;
+    margin: 0 auto;
+    width: 550px;
+}
+textarea{
+    width: 80%;
+}
+/**********************CSS de las sucursales************************/
 iframe{
  width: 300px;
  height: 200px;
  border: 0px;  
  padding: 10px; 
 }
-/*puntos de control*/
+/*puntos de control aun no estoy usando esta parte es solo de ejemplo*/
 .example{
     padding: 20px;
     color:white;
