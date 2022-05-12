@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
-    <title>about cocina de Juan</title> <!--Título de la pestaña del navegador-->
+    <title>Form</title> <!--Título de la pestaña del navegador-->
 </head>
 <body>
     <header>
@@ -27,7 +27,7 @@
     </header>
     <main>
         <h3>Formulario de Registro</h3>
-        <form action="show_data.html" target="_blank" method="post">
+        <form action="show_data.html" target="_blank" method="post" class="form">
             <fieldset><legend>Datos personales</legend>
                 <label for="firstname">Nombre:</label><input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..." required="validar"><br>
                 <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui..." required="validar"><br>
@@ -71,7 +71,7 @@
                 <label for="comentarios"></label> <textarea name="comentarios" rows="10" cols="30"></textarea>
             </fieldset>
             <br><br>
-            <div>
+            <div class="button">
                 <input type="submit" value="Enviar">
                 <button type="reset">Reset</button>  
             </div>      

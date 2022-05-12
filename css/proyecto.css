@@ -5,7 +5,7 @@ h2{
     text-align: center;
     font-size: larger;
 }
-/***************CSS del body*******************/
+/***************CSS Genreal del body*******************/
 body{
     position: relative;
     padding-bottom: 60px;
@@ -38,12 +38,16 @@ header{
     border-radius: 10px;
     transition: 3s;
 }
-.imgClient{
+/********Aplicando flex en our clientes*/
+.flex-container{
+    background-color: aliceblue;
     width: 500px; 
     height: 300px;
     margin: 10px;
     padding: 0px;
-}
+    display: inline-flex;
+    }
+
 .imgSopaCalabaza{
     width: 30%;
     border-radius: 10px;
@@ -51,7 +55,7 @@ header{
 }
 /*Transformacion de imagenes*/
 .imgSopaCalabaza:hover{ 
-    -webkit-transform: rotate(180deg);transform: rotate(180deg);
+    transform: translateX(200px);    
 }
 .contenedor1:hover .imgAbout {
     -webkit-transform:scale(0.5);transform:scale(0.5);
@@ -89,6 +93,15 @@ footer{
 .nav:hover{
     color: gainsboro;
 }
+/* Pseudo clase para cambiar el color sobre los enlaces de sucursales*/
+.sucursales:visited {
+    color: blue;
+} 
+.psucursales{
+    font-family: 'Quicksand', sans-serif;
+    font-size:smaller;
+}
+
 /********************CSS del formulario de registro ********************/
 fieldset{
     padding: 5px;
@@ -118,14 +131,19 @@ input[type=checkbox],
 }
 input[type=submit],
 button[type=reset]{
-    width: 100%;
+    width: 50%;
+    height: 50%;
     background-color: blueviolet;
     color: white;
-    padding: 14px 20px;
+    padding: 14px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: small;
+}
+.button{
+    text-align: center;
 }
 input[type=submit]:hover, 
 button[type=reset]:hover{
@@ -149,58 +167,83 @@ iframe{
  border: 0px;  
  padding: 10px; 
 }
-/*puntos de control aun no estoy usando esta parte es solo de ejemplo*/
-.example{
-    padding: 20px;
-    color:white;
-}
-.responsivo{
-    font-size: 3vw;
-}
+/*************puntos de control sobre el form**********************/
 @media only screen and (max-width: 600px){
-    .example{
-        background: green;
+    .form{
+        background: #D5DBDB ;
     }
     h1{
         font-size: 22px;
     }
-    .responsivo{
-        font-size: 14px;
+    label, input, fieldset{
+        font-size: small;
+    }
+    input[type=submit],
+    button[type=reset]{
+    background-color:  #909497  ;
     }
 }
 
 @media only screen and (min-width: 600px){
-    .example{
-        background: red;
+    .form{
+        background:#FADBD8;
     }
     h1{
-        font-size: 18px;
+        font-size: 12px;
+    }
+    label, input, fieldset{
+        font-size: small;
+    }
+    input[type=submit],
+    button[type=reset]{
+    background-color:  #909497  ;
     }
 }
 
 @media only screen and (min-width: 768px){
-    .example{
-        background: blue;
+    .form{
+        background: #E8DAEF;
+        font-size: x-large;
+    }
+    label, input, fieldset{
+    font-size: small;
     }
     h1{
         font-size: 20px;
     }
+    input[type=submit],
+    button[type=reset]{
+    background-color:  #2E4053 ;
+    }
 }
 
 @media only screen and (min-width: 992px){
-    .example{
-        background: orange;
+    .form{
+        background: #A9DFBF;
+        font-size: large;
     }
     h1{
         font-size: 26px;
     }
+    input[type=submit],
+    button[type=reset]{
+    background-color:  #2E4053 ;
+    }
 }
 
 @media only screen and (min-width: 1200px){
-    .example{
-        background: pink;
+    .form{
+        background: #D6EAF8;
     }
     h1{
         font-size: 36px;
+        font-size: medium;
+    }
+    input[type=submit],
+    button[type=reset]{
+    background-color: blueviolet;
+    }
+    label, input, fieldset{
+        font-size: medium;
     }
 }
