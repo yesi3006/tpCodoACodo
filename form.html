@@ -10,27 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-
     <title>Form</title> <!--Título de la pestaña del navegador-->
 </head>
 <body>
-    <header>
-        <nav>
-            <a class="nav" href="index.html">Home</a>
-            <a class="nav" href="about.html">Acerca de</a>
-            <a class="nav" href="contact.html">Contacto</a>
-            <a class="nav" href="form.html">Registrese</a>
-            <a class="nav" href="location.html">Sucursales</a>
-            <a class="nav" href="ourClients.html">Nuestros Clientes</a>
-        </nav>
-        <h2>La cocina de Juan</h2> <!--Se usa una sola vez porque indica el título principal-->
+    <header id="idHeader">
     </header>
     <main>
         <h3>Formulario de Registro</h3>
-        <form action="show_data.html" target="_blank" method="post" class="form">
+            <form action=""  method="get" class="form" name="formulario"  id="formulario">
+            <form action="" name="formulario" method="get">
             <fieldset><legend>Datos personales</legend>
-                <label for="firstname">Nombre:</label><input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..." required="validar"><br>
-                <label for="lastname">Apellido:</label><input size="30" type="text" name="lastname" placeholder="Ingrese su apellido aqui..." required="validar"><br>
+                <label for="firstname">Nombre:</label>
+                <input type="text" name="nombre" id="name" size="30"   placeholder="Ingrese su nombre aqui..."><br>
+                <label for="lastname">Apellido:</label>
+                <input id="apellido" size="30" type="text" name="apellido" placeholder="Ingrese su apellido aqui..."><br>
             </fieldset><br>
             <fieldset> 
                 <legend>Dirección</legend>
@@ -40,25 +33,23 @@
                 <label for="postalCode">Código postal: </label><input size="30" type="num" name="postalCode" placeholder="Ingrese codigo postal..."><br>
                 <label for="telephone">Teléfono: </label><input size="30" type="text" name="telephone" placeholder="Ingrese su numero de teléfono..."><br>
                 <label for="birthDate">Fecha nac: </label><input size="30" type="date" name="birthDate" placeholder=""><br>
-                <label for="mail">Mail: </label><input type="email" name="mail" required="validar" placeholder="Ingrese su mail de contacto..."><br>
-                <label for="clave">Clave: </label><input type="password" name="clave" placeholder="Ingrese su clave..."><br>
+                <label for="mail">Mail: </label>
+                <input type="email" name="mail"  placeholder="Ingrese su mail de contacto..."><br>
+                <label for="clave">Clave: </label>
+                <input type="password" name="clave" placeholder="Ingrese su clave..."><br>
             </fieldset><br>
             <fieldset><legend>Género</legend>
                     <input type="radio" name="gender" value="hombre" checked>Hombre
                     <input type="radio" name="gender" value="Mujer">Mujer
                     <input type="radio" name="gender" value="Otro"> Otro
             </fieldset><br>
-            <fieldset><legend>Conocimientos previos</legend>
-                <input type="checkbox" name="conocimientos" value="HTML"> HTML<br>
-                <input type="checkbox" name="conocimientos" value="CSS"> CSS<br>
-                <input type="checkbox" name="conocimientos" value="BOOTSTRAP">Bootstrap<br>
-                <input type="checkbox" name="conocimientos" value="Javascript">Javascript<br>
-                <input type="checkbox" name="conocimientos" value="Typescript">Typescript<br>
-                <input type="checkbox" name="conocimientos" value="Angular">Angular<br>
-                <input type="checkbox" name="conocimientos" value="BaseDeDatos">B.D<br>
-                <input type="checkbox" name="conocimientos" value="Python">Python<br>
-                <input type="checkbox" name="conocimientos" value="Django">Django<br>    
-            </fieldset><br>
+            <fieldset><legend>Produtos de Interes</legend>
+                <input type="checkbox" name="conocimientos" value="KOBE"> Kobe<br>
+                <input type="checkbox" name="conocimientos" value="WAGYU"> Wagyu<br>
+                <input type="checkbox" name="conocimientos" value="TOMAHAWK">tomahawk<br>
+                <input type="checkbox" name="conocimientos" value="FILET">Filet<br>
+                <input type="checkbox" name="conocimientos" value="BEFF">Beef<br>
+                </fieldset><br>
             <fieldset><legend>Estudios</legend>
                 <select class="estudios" name="estudios">
                     <option value="primaria">Primaria</option>
@@ -72,19 +63,14 @@
             </fieldset>
             <br><br>
             <div class="button">
-                <input type="submit" value="Enviar">
+                <input type="submit" id="btn" name="btn" value="Enviar">
                 <button type="reset">Reset</button>  
-            </div>      
-        </form>    
+            </div>    
+        </form>
     </main>
-    <footer>
-        <div>
-            <a href="https://www.facebook.com" class="fa-brands fa-facebook" id="social" target="_blank"></a>
-            <a href="https://www.youtube.com" class="fa-brands fa-youtube" id="social" target="_blank"></a>
-            <a href="https://www.likedin.com" class="fa-brands fa-linkedin-in"id="social" target="_blank"></a>
-            <a href="https://www.instagram.com" class="fa-brands fa-instagram" id="social" target="_blank"></a>
-        </div>
-        <p>Derechos reservados @2020</p>
+    <footer id="idFooter">
     </footer>
+    <script src="validaciones.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

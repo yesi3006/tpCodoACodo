@@ -247,3 +247,61 @@ iframe{
         font-size: medium;
     }
 }
+/* Carrousel */
+
+
+.carrousel{
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    background-color: blanchedalmond;
+
+}
+
+.carrousel .grande{
+    width: 20   0%;
+    background-color: blanchedalmond;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    transition: all .5s ease;
+    rotate:(45deg);
+    transform: translateX(0%);
+
+}
+.carrousel .imgCarrousel{
+    width: calc(100% /4 - 2em);
+    background-color: blanchedalmond;
+    min-height: 10vh;
+    border-radius: 15px;
+    object-fit: cover;
+    z-index: -1;
+    
+   
+   
+}
+.carrousel .puntos{
+    width: 100%;
+    margin: 1em 0 0;
+    background-color: blanchedalmond;
+    padding: .4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.carrousel .punto{
+    width: 2em;
+    height: 2em;
+    background-color: blanchedalmond;
+    padding: 1em;
+    margin:  1em, 1em 0;
+}
+
+
+.carrousel .punto.activo{
+    
+    border-bottom: #909497;
+}
